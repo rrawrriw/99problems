@@ -1,8 +1,11 @@
-package main
+package nintynine
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestReplicate(t *testing.T) {
 	l := []string{"a", "b", "c"}
 	v := replicate(l, 3)
 	fmt.Println(v)

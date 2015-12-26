@@ -1,11 +1,14 @@
-package main
+package nintynine
 
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
-func main() {
+func TestDrop(t *testing.T) {
 	l := []string{"a", "b", "c", "d", "e", "f"}
 	v := drop(l, 2)
-	fmt.Println(l)
+	fmt.Println(v)
 }
 
 func drop(li []string, i int) []string {

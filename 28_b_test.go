@@ -1,8 +1,9 @@
-package main
+package nintynine
 
 import (
 	"fmt"
 	"sort"
+	"testing"
 )
 
 type (
@@ -13,7 +14,7 @@ type (
 	}
 )
 
-func main() {
+func TestSortByFreq(t *testing.T) {
 	in := [][]string{{"a", "b", "c"}, {"d", "e"}, {"f", "g", "h"}, {"d", "e"}, {"i", "j", "k", "l"}, {"m", "n"}, {"o"}}
 	sortByFreq(in)
 	fmt.Println(in)
